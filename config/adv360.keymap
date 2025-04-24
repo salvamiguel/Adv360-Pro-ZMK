@@ -20,7 +20,8 @@
             bindings = <&kp>, <&kp>;
 
             quick-tap-ms = <175>;
-            hold-trigger-key-positions = <29 30 31 32 41 42 43 44>;
+            hold-while-undecided;
+            hold-while-undecided-linger;
         };
     };
 
