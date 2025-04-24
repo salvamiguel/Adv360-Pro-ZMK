@@ -16,16 +16,19 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <175>;
+            hold-trigger-key-positions = <29 30 31 32 41 42 43 44>;
         };
     };
 
     macros {
-        new_macro: new_macro {
+        euro_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp RIGHT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_8>;
             label = "NEW_MACRO";
         };
     };
